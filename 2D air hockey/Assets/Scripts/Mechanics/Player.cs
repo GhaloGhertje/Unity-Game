@@ -16,7 +16,17 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            rb.velocity = new Vector2(0.0f, -1.0f);
+        }
+
+
         Vector2 moveInput = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+
+
+
         moveVelocity = moveInput.normalized * speed;
     }
 

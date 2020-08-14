@@ -8,6 +8,8 @@ public class Ball : MonoBehaviour
     private Rigidbody2D rb;
     Vector3 lastVelocity;
 
+    public float boost;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,11 +21,11 @@ public class Ball : MonoBehaviour
         lastVelocity = rb.velocity;
     }
 
-    private void OnCollisionEnter2D(Collision2D coll)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        var speed = lastVelocity.magnitude;
-        var direction = Vector3.Reflect(lastVelocity.normalized, coll.contacts[0].normal);
-
-        rb.velocity = direction * Math.Max(speed, 0f);
+        if (other.gameObject.name == "Cube")
+        {
+            rb.velocity = rb.velocity * -1;
+        }
     }
 }
