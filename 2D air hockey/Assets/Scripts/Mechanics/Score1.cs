@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class Score : MonoBehaviour
+public class Score1 : MonoBehaviour
 {                                       //public koppelt 
     public Rigidbody2D rb;              //hierin kan je de mechanics van het gewicht en weerstand in zetten in unity (kom je nog wel achter)
 
