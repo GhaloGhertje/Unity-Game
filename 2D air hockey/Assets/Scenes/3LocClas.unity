@@ -2785,6 +2785,8 @@ MonoBehaviour:
   StartPointRed: {x: 0, y: -37.5, z: 0}
   Ball: {fileID: 786589769}
   StartPointBall: {x: 0, y: 2, z: 0}
+  WinnerMenu: {fileID: 123252484}
+  Blurr: {fileID: 144013213}
 --- !u!1 &1025565119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4333,7 +4335,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 786589770}
-  Levens: 5
+  Levens: 1
   BlueScore: {fileID: 826375649}
   GreenScore: {fileID: 1724871796}
   YellowScore: {fileID: 1724871796}
@@ -4348,6 +4350,8 @@ MonoBehaviour:
   StartPointRed: {x: 0, y: -37.5, z: 0}
   Ball: {fileID: 786589769}
   StartPointBall: {x: 0, y: 2, z: 0}
+  WinnerMenu: {fileID: 123252484}
+  Blurr: {fileID: 144013213}
 --- !u!1 &1724871794
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,7 +4852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 786589770}
-  Levens: 5
+  Levens: 1
   BlueScore: {fileID: 826375649}
   GreenScore: {fileID: 1724871796}
   YellowScore: {fileID: 1724871796}
@@ -4863,6 +4867,8 @@ MonoBehaviour:
   StartPointRed: {x: 0, y: -37.5, z: 0}
   Ball: {fileID: 786589769}
   StartPointBall: {x: 0, y: 2, z: 0}
+  WinnerMenu: {fileID: 123252484}
+  Blurr: {fileID: 144013213}
 --- !u!1 &1988062617
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,9 @@ public class Score41 : MonoBehaviour
     public GameObject Ball;
     public Vector3 StartPointBall;
 
+    public GameObject WinnerMenu;
+    public GameObject Blurr;
+
     void Start()
     {
         Lives = Lives + Levens;
@@ -34,7 +37,7 @@ public class Score41 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Ball") //zorgt ervoor dat alleen de bal er door heen kan
+        if (other.gameObject.name == "Ball")
         {
             Hit();
             Blue.transform.position = StartPointBlue;
@@ -59,7 +62,8 @@ public class Score41 : MonoBehaviour
             BlueScore.text = "Lost".ToString();
         }
 
-        if (Lives > 0 && GreenScore.text == "Lost" && YellowScore.text == "Lost" && RedScore.text == "Lost")
+        //if (Lives > 0 && GreenScore.text == "Lost" && YellowScore.text == "Lost" && RedScore.text == "Lost")
+        if (Blue == true && Green == false && Yellow == false)
         {
             WinningScene();
         }
@@ -74,6 +78,7 @@ public class Score41 : MonoBehaviour
 
     void PauseMenu()
     {
-
+        WinnerMenu.gameObject.SetActive(true);
+        Blurr.gameObject.SetActive(true);
     }
 }
